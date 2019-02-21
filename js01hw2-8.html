@@ -1,0 +1,30 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>JS-1. ДЗ-2. Задача 8</title>
+	</head>	
+	<body>
+		<script>
+			var a = prompt('Введите число');
+			var b = prompt('Введите степень');
+			var c;
+
+			var oneStep = function(x, y)	{
+				if (y > 1)	{
+					console.log('y = ' + y + ', x = ' + x);
+					return(x * oneStep(x, y - 1));
+					//console.log('d = ' + d);
+				}	else	{
+					return(x);
+				}
+			}
+
+//==================
+			c = oneStep(a, b);
+			alert(c);
+			//console.log(a, b);
+			//console.log(c);
+
+		</script>
+	</body>
+</html>		
