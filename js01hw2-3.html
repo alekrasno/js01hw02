@@ -1,0 +1,23 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>JS-1. ДЗ-2. Задача 3</title>
+	</head>	
+	<body>
+		<script>
+			var a = prompt('Введите первое число');
+			var b = prompt('Введите второе число');
+			var A = parseInt(a); 
+			var B = parseInt(b);
+			var C; 
+
+			if ((A < 0)&&(B >= 0) || (A >= 0)&&(B < 0)) {
+				C = A + B;
+				alert('Числа разнозначные, их сумма равна ' + C);
+			}	else	{
+				alert('Числа должны быть разных знаков! Повторяем')
+				window.location.reload();
+			}
+		</script>
+	</body>
+</html>		
