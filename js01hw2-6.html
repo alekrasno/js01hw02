@@ -1,0 +1,65 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>JS-1. ДЗ-2. Задача 6</title>
+	</head>	
+	<body>
+		<script>
+			var a;
+			var b;
+			// var A = parseInt(a); 
+			// var B = parseInt(b);
+			var C; 
+
+			var Sum = function(x, y)	{ // Функция сложения
+				return(x + y);
+			}
+
+			var Sub = function(x, y)	{ // Функция вычитания
+				return(x - y);
+			}
+
+			var Mul = function(x, y)	{ // Функция умножения
+				return(x * y);
+			}
+
+			var Div = function(x, y)	{ // Функция деления
+				return(x / y);
+			}
+
+			var mathOperation = function(x, y, z)	{  // Функция с тремя операторами
+				switch(z) {
+					case 1: // Сложение
+						return(Sum(x, y));
+						break;
+					case 2: // Вычитание
+						return(Sub(x, y));
+						break;	
+					case 3: // Умножение
+						return(Mul(x, y));
+						break;	
+					case 4: // Деление
+						return(Div(x, y));
+						break;	
+					default: {
+						alert('Арифметическое действие не определено');
+						
+					}	
+				}
+			}
+
+//===================================================
+
+			a =+ prompt('Введите первое число');
+			b =+ prompt('Введите второе число');
+			c =+ prompt('Введите действие\n1 - сложение\n2 - вычитание\n3 - умножение\n4 - деление');
+
+			alert('Результат ' + mathOperation(a, b, c));
+			/*alert('Сумма введенных чисел ' + Sum(a, b) + "\n" +
+			'Разность введенных чисел ' + Sub(a, b) + "\n" +
+			'Произведение введенных чисел ' + Mul(a, b) + "\n" +
+			'Частное введенных чисел ' + Div(a, b));*/
+
+		</script>
+	</body>
+</html>		

@@ -1,0 +1,42 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>JS-1. ДЗ-2. Задача 5</title>
+	</head>	
+	<body>
+		<script>
+			var a;
+			var b;
+			// var A = parseInt(a); 
+			// var B = parseInt(b);
+			var C; 
+
+			var Sum = function(x, y)	{ // Функция сложения
+				return(x + y);
+			}
+
+			var Sub = function(x, y)	{ // Функция вычитания
+				return(x - y);
+			}
+
+			var Mul = function(x, y)	{ // Функция умножения
+				return(x * y);
+			}
+
+			var Div = function(x, y)	{ // Функция деления
+				return(x / y);
+			}
+
+//===================================================
+
+			a =+ prompt('Введите первое число');
+			b =+ prompt('Введите второе число');
+
+			alert('Сумма введенных чисел ' + Sum(a, b) + "\n" +
+			'Разность введенных чисел ' + Sub(a, b) + "\n" +
+			'Произведение введенных чисел ' + Mul(a, b) + "\n" +
+			'Частное введенных чисел ' + Div(a, b));
+
+		</script>
+	</body>
+</html>		
