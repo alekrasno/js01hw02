@@ -1,0 +1,22 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>JS-1. ДЗ-2. Задача 7</title>
+	</head>	
+	<body>
+		<script>
+			var Zero = 0;
+			var Null = null;
+			var numZero	=+ Zero; 
+			var numNull	=+ Null;
+
+			console.log('0 в чистом виде имеет тип ' + typeof(Zero));
+			console.log('null в чистом виде имеет тип ' + typeof(Null));
+			console.log('0 парсенный имеет тип ' + typeof(numZero));
+			console.log('null парсенный имеет тип ' + typeof(numNull));
+			console.log('Сравниваем чистыми ' + (Zero == Null));
+			console.log('Сравниваем парсенными ' + (numZero == numNull));
+
+		</script>
+	</body>
+</html>		
