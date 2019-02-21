@@ -11,11 +11,20 @@
 			var B = parseInt(b);
 			var C; 
 
-			if ((A < 0)&&(B >= 0) || (A >= 0)&&(B < 0)) {
+			if ((A >= 0)&&(B >= 0)) {
+				C = Math.abs(A - B);
+				alert('Числа положительные, разность равна ' + C);
+			} else if ((A < 0)&&(B < 0)) {
+				C = A * B;
+				console.log(A);
+				console.log(B);
+				console.log(C);
+				alert('Числа отрицательные, произведение равно ' + C);
+			} else if ((A < 0)&&(B >= 0) || (A >= 0)&&(B < 0)) {
 				C = A + B;
 				alert('Числа разнозначные, их сумма равна ' + C);
 			}	else	{
-				alert('Числа должны быть разных знаков! Повторяем')
+				alert('Что-то с числами не так! Повторяем')
 				window.location.reload();
 			}
 		</script>
